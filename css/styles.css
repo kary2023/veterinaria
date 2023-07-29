@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root{
+    --lime: #00FF00;
+    --blue: #0000FF;
+    --red: #FF0000;
+    --green: #008000;
+    --black: #000000;
+    --whait: #ffffff;
+    --grey: #808080;
+    --light-grey:#dcdcdc;
+    --green-moo: #f6f6c9;
+    --green-very-light:#b2d3c2;
+
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;font-family: 'Crimson Text', serif;
+    transition: 0.4s;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 10px;
+   
+}
+
+.header .banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--whait);
+    border-radius: 30px 30px 0px 0px;
+    
+}
+
+.header .banner .img-banner img{
+    height: 225px;
+    width: auto;
+    margin: 25px 40px;
+
+}
+
+.header .banner .img-banner img:hover{
+    transform: scale(1.2);
+}
+
+.header .banner .text h3 {
+    font-size: 2rem;
+    color:var(--grey);
+}
+
+.header .banner .text h2 {
+    font-size: 3rem;
+    color:var(--black);
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--black);
+    border-radius: 0px 0px 30px 30px;
+
+}
+
+.header .nav a{
+    display: flex;
+    text-decoration: none;
+    margin: 15px 30px;
+    font-size: 1.6rem;
+    font-weight:500;
+    color:var(--whait);
+
+}
+
+.header .nav a:hover{
+    color: var(--red);
+    font-weight: 800;
+}
+
+.info {
+    display: flex;
+    width: 80%;
+}
+
+.info .article {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+}
+
+.info .article .section {
+    margin: 25px 100px 25px 3px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--green-very-light);
+
+}
+
+.info .article .section h2{
+    font-size: 1.5rem;
+    color:var(--black);
+}
+
+.info .article .section .preview{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+.info .article .section .preview p{
+    font-size: 1.1rem;
+    color: var(--black);
+}
+
+.info .article .section .preview img{
+    width: auto;
+    height: 80px;
+}
+
+.info .article .section .preview img:hover {
+    transform: scale(1.3);
+
+}
+
+ .info .article .section a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--black);
+
+ }
+
+ .info .article .section a:hover{
+    color: var(--red);
+ }
+
+ .info .aside {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0px 25px 0px;
+    
+ }
+
+ .info .aside h2{
+    color: var(--whait);
+    background-color: var(--black);
+    border-radius: 25px 25px 0px 0px;
+    text-align: center;
+    
+ }
+
+ .info .aside form{
+    background-color: var(--green-very-light);
+    border-radius: 0px 0px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+ }
+
+ .info .aside form p{
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+ }
+
+ .info .aside form p input{
+    border:#000000;
+    background: var(--light-grey);
+    border-radius: 50px;
+    padding: 5px;
+    outline: none;
+    text-align: center;
+
+ }
+
+
+ .info .aside form .btn input{
+    color: var(--whait);
+    padding: 10px 25px;
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin: 15px 0px 0px 0px;
+    background-color: var(--black);
+
+ }
+
+ .info .aside form .btn input:hover{
+    background-color: var(--whait);
+    color:var(--black);
+    
+ }
+
+ .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--whait);
+    width: 80%;
+    border-radius: 25px 25px 25px 25px;
+    padding: 25px 0px;
+    margin-bottom: 25px;
+   margin: 10px 0px 10px 0px;
+
+ }
+
+ .footer p{
+    font-size: 1.3rem;
+    font-weight: 500;
+
+ }
+
+ @media screen and (max-width: 999px){
+    .info {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .info .article{
+        width: 100;
+        margin: 25px 0px;
+    }
+    
+    .info .article .section {
+        width: 100%;
+    }
+
+    .info .aside {
+        width: 100%;
+        margin: 0px 0px 50px 0px;
+
+    }
+
+    .info .aside form{
+        height: 500px;
+    }
+
+    .info .aside form .btn {
+        margin-bottom: 20px;
+    }
+}
